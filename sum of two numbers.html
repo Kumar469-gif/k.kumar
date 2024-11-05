@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showSum()
+        {
+            let a=Number(form1.num1.value);
+            let b=Number(form1.num2.value);
+            let sum=a+b;
+            document.getElementById("result").innerHTML=sum;
+        }
+    </script>
+</head>
+<body>
+    <h1 align="center">Sum of Two nos </h1>
+    <form name="form1">
+        <table cellpadding="20px" bgcolor="skyblue" align="center">
+            <tr>
+                <td>Enter first number </td>
+                <td><input type="number" id="num1" maxlength="30" placeholder="enter first number">  </td>
+            </tr>
+            <tr>
+                <td>Enter second number </td>
+                <td><input type="number" id="num2" maxlength="30" placeholder="enter second number">  </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td><input type="button" id="btnSubmit" value="Submit" onclick="showSum()">  </td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> <h2 id="result">Message</h2>  </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+
